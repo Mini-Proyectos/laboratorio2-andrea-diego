@@ -17,7 +17,8 @@ def Merge(A:[], p:int, q: int, r: int):
 		L.append(A[p+i-1])
 	for i in range(1,m):
 		R.append(A[q+i])
-	L[n+1] = R[m+1] = sys.maxint
+	L.append(sys.maxsize)
+	R.append(sys.maxsize)
 	i, j = 1,1
 	for k in range(p,r):
 		if L[i]<=R[j]:

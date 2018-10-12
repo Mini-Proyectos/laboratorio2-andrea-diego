@@ -13,9 +13,9 @@ while i!=n:
 	i = i+1
 
 if algoritmo == "MergeSort":
-	Sorts.MergeSort(A, 0, n-1)
+	Sorts.MergeSort(A, 0, n)
 else:
-	Sorts.InsertionSort(A, 0, n-1)
+	Sorts.InsertionSort(A, 0, n)
 fin = time.time()
 tiempo = (fin-inicio) * 1000
 print(algoritmo, n, str(tiempo))

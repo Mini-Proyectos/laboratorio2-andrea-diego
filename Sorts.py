@@ -1,10 +1,10 @@
 import sys
 
-def Mergesort(A:[], p: int, r: int):
+def MergeSort(A:[], p: int, r: int):
 	if p < r:
 		q = (p+r)//2
-		Mergesort(A, p, q)
-		Mergesort(A, q+1, r)
+		MergeSort(A, p, q)
+		MergeSort(A, q+1, r)
 		Merge(A, p, q, r)
 		
 

@@ -13,13 +13,13 @@ def Merge(A:[], p:int, q: int, r: int):
 	m = r-q				# tamaño de A[q+1]
 	L = []
 	R = []
-	for i in range(1,n):
+	for i in range(0,n):
 		L.append(A[p+i-1])
-	for i in range(1,m):
+	for i in range(0,m):
 		R.append(A[q+i])
 	L.append(sys.maxsize)
 	R.append(sys.maxsize)
-	i, j = 1,1
+	i, j = 0,0
 	for k in range(p,r):
 		if L[i]<=R[j]:
 			A[k]=L[i]	# Remover primero de L

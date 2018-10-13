@@ -13,7 +13,7 @@ while i!=n:
 	i = i+1
 
 if algoritmo == "MergeSort":
-	Sorts.MergeSort(A, 0, n)
+	Sorts.MergeSort(A, 0, n-1)
 else:
 	Sorts.InsertionSort(A, 0, n)
 
